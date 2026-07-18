@@ -2,15 +2,13 @@ import Link from 'next/link';
 import { BUSINESS } from '@/lib/constants';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
-import { Icon } from '@/components/ui/Icon';
+import { Logo } from '@/components/ui/Logo';
 
 export default function NotFound() {
   return (
     <section className="py-24 sm:py-32">
       <Container className="flex flex-col items-center gap-6 text-center">
-        <span className="flex h-16 w-16 items-center justify-center rounded-2xl bg-navy-950 text-cyan-400">
-          <Icon name="key" className="h-8 w-8" />
-        </span>
+        <Logo size="lg" className="h-16 w-16" />
         <h1 className="text-4xl font-bold text-navy-950">Page Not Found</h1>
         <p className="max-w-md text-slate-600">
           The page you are looking for could not be found. It may have been moved, or the address may be

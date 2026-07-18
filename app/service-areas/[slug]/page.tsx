@@ -13,6 +13,7 @@ import { FAQSection } from '@/components/sections/FAQSection';
 import { CTABanner } from '@/components/ui/CTABanner';
 import { getServiceAreaBySlug, getNearbyAreas, serviceAreas } from '@/data/serviceAreas';
 import { getServiceBySlug } from '@/data/services';
+import { getBlogPostBySlug } from '@/data/blog';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -47,6 +48,9 @@ export default async function ServiceAreaPage({ params }: Props) {
   const relatedServices = area.relatedServices
     .map((serviceSlug) => getServiceBySlug(serviceSlug))
     .filter((s): s is NonNullable<typeof s> => Boolean(s));
+  const relatedArticles = area.relatedArticles
+    .map((articleSlug) => getBlogPostBySlug(articleSlug))
+    .filter((p): p is NonNullable<typeof p> => Boolean(p));
 
   const breadcrumbItems = [
     { name: 'Home', path: '/' },
@@ -95,10 +99,28 @@ export default async function ServiceAreaPage({ params }: Props) {
                 Automotive Locksmith Services Available in {area.name}
               </h2>
               <p className="mt-3 text-slate-600">
-                Auto Locksmith Dandenong provides mobile automotive locksmith assistance in {area.name},
-                covering car keys, motorcycle keys, key programming and vehicle lockouts. Auto Locksmith
-                Dandenong is based at {BUSINESS.addressFull} and travels to {area.name} as a mobile service
-                rather than operating a separate local office.
+                Auto Locksmith Dandenong provides a full{' '}
+                <Link href="/services/automotive-locksmith-dandenong/" className="font-semibold text-cyan-600 hover:text-cyan-500">
+                  automotive locksmith service
+                </Link>{' '}
+                in {area.name}, covering car keys, motorcycle keys, key programming and vehicle lockouts. Auto
+                Locksmith Dandenong is based at {BUSINESS.addressFull} and travels to {area.name} as a mobile
+                service rather than operating a separate local office.
+              </p>
+              <p className="mt-3 text-slate-600">
+                Drivers in {area.name} can also request{' '}
+                <Link href="/services/mobile-car-locksmith-dandenong/" className="font-semibold text-cyan-600 hover:text-cyan-500">
+                  mobile car key replacement
+                </Link>
+                ,{' '}
+                <Link href="/services/emergency-car-locksmith-dandenong/" className="font-semibold text-cyan-600 hover:text-cyan-500">
+                  emergency locksmith assistance
+                </Link>{' '}
+                and{' '}
+                <Link href="/services/car-key-programming-dandenong/" className="font-semibold text-cyan-600 hover:text-cyan-500">
+                  car key programming
+                </Link>{' '}
+                at their driveway, workplace or roadside location.
               </p>
             </div>
 
@@ -197,6 +219,24 @@ export default async function ServiceAreaPage({ params }: Props) {
                 View All Service Areas &rarr;
               </Link>
             </div>
+
+            {relatedArticles.length > 0 ? (
+              <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+                <h2 className="text-lg font-bold text-navy-950">Related Articles</h2>
+                <ul className="mt-3 flex flex-col gap-2">
+                  {relatedArticles.map((article) => (
+                    <li key={article.slug}>
+                      <Link
+                        href={`/blog/${article.slug}/`}
+                        className="text-sm font-medium text-cyan-600 hover:text-cyan-500"
+                      >
+                        {article.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
           </aside>
         </Container>
       </section>

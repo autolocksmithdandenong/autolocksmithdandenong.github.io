@@ -4,6 +4,7 @@ import { mainNav } from '@/data/navigation';
 import { services } from '@/data/services';
 import { serviceAreas } from '@/data/serviceAreas';
 import { Icon } from '@/components/ui/Icon';
+import { Logo } from '@/components/ui/Logo';
 import { MobileNav } from '@/components/layout/MobileNav';
 
 export function Header() {
@@ -28,9 +29,7 @@ export function Header() {
 
       <div className="mx-auto flex w-full max-w-content items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2.5">
-          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-navy-950 text-cyan-400">
-            <Icon name="shield" className="h-6 w-6" />
-          </span>
+          <Logo size="sm" priority className="h-10 w-10 sm:h-11 sm:w-11" />
           <span className="flex flex-col leading-tight">
             <span className="text-sm font-bold text-navy-950 sm:text-base">Auto Locksmith</span>
             <span className="text-sm font-bold text-cyan-600 sm:text-base">Dandenong</span>

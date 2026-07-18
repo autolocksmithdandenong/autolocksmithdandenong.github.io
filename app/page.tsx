@@ -12,10 +12,12 @@ import { AreaGrid } from '@/components/sections/AreaGrid';
 import { WhyChooseUs } from '@/components/sections/WhyChooseUs';
 import { LocalBusinessInfo } from '@/components/sections/LocalBusinessInfo';
 import { FAQSection } from '@/components/sections/FAQSection';
+import { BlogHighlights } from '@/components/sections/BlogHighlights';
 import { CTABanner } from '@/components/ui/CTABanner';
 import { featuredServices, getServiceBySlug, motorcycleServices } from '@/data/services';
 import { serviceAreas } from '@/data/serviceAreas';
 import { homepageFaqs } from '@/data/faqs';
+import { getSortedBlogPosts } from '@/data/blog';
 
 const title = 'Auto Locksmith Dandenong | Mobile Car Locksmith 24/7';
 const description =
@@ -83,6 +85,7 @@ export default function HomePage() {
         areas={serviceAreas}
         showViewAll={false}
       />
+      <BlogHighlights posts={getSortedBlogPosts().slice(0, 3)} />
       <WhyChooseUs />
       <LocalBusinessInfo />
       <FAQSection faqs={homepageFaqs} idPrefix="home" />

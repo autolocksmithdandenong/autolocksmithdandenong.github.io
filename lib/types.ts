@@ -40,6 +40,7 @@ export type Service = {
   callerInfo: string[];
   relatedServices: string[];
   relatedAreas: string[];
+  relatedArticles: string[];
   faqs: FAQ[];
   category: 'car' | 'motorcycle' | 'general';
   featured?: boolean;
@@ -57,6 +58,7 @@ export type ServiceArea = {
   motorcycleLocksmith: string;
   nearby: string[];
   relatedServices: string[];
+  relatedArticles: string[];
   faqs: FAQ[];
   featured?: boolean;
 };

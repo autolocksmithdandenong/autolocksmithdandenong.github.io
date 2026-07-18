@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { BUSINESS } from '@/lib/constants';
 import { Button } from '@/components/ui/Button';
 import { Icon } from '@/components/ui/Icon';
@@ -26,13 +27,36 @@ export function Hero() {
 
           <p className="max-w-xl text-lg text-slate-300">
             Auto Locksmith Dandenong provides mobile automotive locksmith assistance throughout Dandenong and
-            surrounding suburbs. Call for car key replacement, lost key assistance, vehicle lockouts, key
-            programming and motorcycle key services.
+            surrounding suburbs. Call for{' '}
+            <Link href="/services/car-key-replacement-dandenong/" className="font-semibold text-cyan-300 hover:text-cyan-200">
+              car key replacement
+            </Link>
+            ,{' '}
+            <Link href="/services/lost-car-keys-dandenong/" className="font-semibold text-cyan-300 hover:text-cyan-200">
+              help with lost car keys
+            </Link>
+            ,{' '}
+            <Link href="/services/vehicle-lockout-assistance-dandenong/" className="font-semibold text-cyan-300 hover:text-cyan-200">
+              vehicle lockout help
+            </Link>
+            ,{' '}
+            <Link href="/services/car-key-programming-dandenong/" className="font-semibold text-cyan-300 hover:text-cyan-200">
+              car key programming assistance
+            </Link>{' '}
+            and{' '}
+            <Link href="/services/motorcycle-locksmith-dandenong/" className="font-semibold text-cyan-300 hover:text-cyan-200">
+              motorcycle key services
+            </Link>
+            .
           </p>
 
           <p className="flex items-center gap-2 text-sm text-slate-400">
             <Icon name="map-pin" className="h-4 w-4 text-cyan-400" />
-            Serving Dandenong and nearby suburbs across Melbourne&apos;s south-east
+            Serving Dandenong and{' '}
+            <Link href="/service-areas/" className="font-medium text-cyan-300 hover:text-cyan-200">
+              nearby suburbs
+            </Link>{' '}
+            across Melbourne&apos;s south-east
           </p>
 
           <div className="flex flex-wrap gap-4">

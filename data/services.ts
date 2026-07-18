@@ -38,6 +38,7 @@ export const services: Service[] = [
       'motorcycle-locksmith-dandenong',
     ],
     relatedAreas: ['dandenong', 'noble-park', 'springvale', 'keysborough'],
+    relatedArticles: ['what-information-a-locksmith-needs-about-your-vehicle', 'preparing-for-a-mobile-automotive-locksmith-visit'],
     faqs: [
       {
         question: 'What does an automotive locksmith help with?',
@@ -95,6 +96,7 @@ export const services: Service[] = [
       'transponder-key-programming-dandenong',
     ],
     relatedAreas: ['dandenong', 'dandenong-north', 'noble-park', 'springvale', 'keysborough', 'hallam'],
+    relatedArticles: ['car-key-replacement-options-explained', 'what-to-do-when-you-lose-your-car-keys', 'how-transponder-car-keys-work'],
     faqs: [
       {
         question: 'Can a car key be replaced without the original key?',
@@ -152,6 +154,7 @@ export const services: Service[] = [
       'car-key-programming-dandenong',
     ],
     relatedAreas: ['dandenong', 'springvale-south', 'endeavour-hills', 'rowville'],
+    relatedArticles: ['car-key-replacement-options-explained', 'spare-car-keys-why-having-a-backup-matters'],
     faqs: [
       {
         question: 'Are replacement keys identical to the original?',
@@ -208,6 +211,7 @@ export const services: Service[] = [
       'emergency-car-locksmith-dandenong',
     ],
     relatedAreas: ['dandenong', 'dandenong-south', 'noble-park', 'hampton-park', 'narre-warren'],
+    relatedArticles: ['what-to-do-when-you-lose-your-car-keys', 'steps-to-take-when-locked-out-of-a-vehicle'],
     faqs: [
       {
         question: 'What should I do first if I lose my car keys?',
@@ -264,6 +268,7 @@ export const services: Service[] = [
       'automotive-locksmith-dandenong',
     ],
     relatedAreas: ['dandenong', 'keysborough', 'springvale', 'berwick', 'cranbourne'],
+    relatedArticles: ['preparing-for-a-mobile-automotive-locksmith-visit', 'what-information-a-locksmith-needs-about-your-vehicle'],
     faqs: [
       {
         question: 'Do you come to my location?',
@@ -318,6 +323,7 @@ export const services: Service[] = [
       'mobile-car-locksmith-dandenong',
     ],
     relatedAreas: ['dandenong', 'dandenong-north', 'doveton', 'narre-warren-south'],
+    relatedArticles: ['steps-to-take-when-locked-out-of-a-vehicle', 'what-to-do-when-you-lose-your-car-keys'],
     faqs: [
       {
         question: 'What counts as an automotive locksmith emergency?',
@@ -373,6 +379,7 @@ export const services: Service[] = [
       'lost-car-keys-dandenong',
     ],
     relatedAreas: ['dandenong', 'springvale', 'noble-park', 'cranbourne-east'],
+    relatedArticles: ['steps-to-take-when-locked-out-of-a-vehicle', 'preparing-for-a-mobile-automotive-locksmith-visit'],
     faqs: [
       {
         question: 'Are you genuinely available 24 hours a day?',
@@ -428,6 +435,7 @@ export const services: Service[] = [
       'car-key-fob-assistance-dandenong',
     ],
     relatedAreas: ['dandenong', 'dandenong-north', 'keysborough', 'hallam', 'rowville'],
+    relatedArticles: ['how-transponder-car-keys-work', 'difference-between-car-keys-remotes-and-key-fobs'],
     faqs: [
       {
         question: 'Why does a new car key need programming?',
@@ -483,6 +491,7 @@ export const services: Service[] = [
       'ignition-key-assistance-dandenong',
     ],
     relatedAreas: ['dandenong', 'noble-park', 'springvale-south', 'endeavour-hills'],
+    relatedArticles: ['how-transponder-car-keys-work', 'car-key-replacement-options-explained'],
     faqs: [
       {
         question: 'What is a transponder key?',
@@ -538,6 +547,7 @@ export const services: Service[] = [
       'spare-car-keys-dandenong',
     ],
     relatedAreas: ['dandenong', 'dandenong-south', 'hampton-park', 'narre-warren'],
+    relatedArticles: ['common-reasons-car-remotes-stop-working', 'difference-between-car-keys-remotes-and-key-fobs'],
     faqs: [
       {
         question: 'Why has my car remote stopped working?',
@@ -593,6 +603,7 @@ export const services: Service[] = [
       'duplicate-car-keys-dandenong',
     ],
     relatedAreas: ['dandenong', 'keysborough', 'noble-park', 'berwick'],
+    relatedArticles: ['difference-between-car-keys-remotes-and-key-fobs', 'common-reasons-car-remotes-stop-working'],
     faqs: [
       {
         question: 'What is the difference between a remote and a key fob?',
@@ -649,6 +660,7 @@ export const services: Service[] = [
       'transponder-key-programming-dandenong',
     ],
     relatedAreas: ['dandenong', 'springvale', 'rowville', 'cranbourne'],
+    relatedArticles: ['spare-car-keys-why-having-a-backup-matters', 'car-key-replacement-options-explained'],
     faqs: [
       {
         question: 'Is a working key needed to cut a spare?',
@@ -705,6 +717,7 @@ export const services: Service[] = [
       'replacement-car-keys-dandenong',
     ],
     relatedAreas: ['dandenong', 'dandenong-north', 'noble-park', 'hallam'],
+    relatedArticles: ['spare-car-keys-why-having-a-backup-matters'],
     faqs: [
       {
         question: 'Is duplicating a car key the same as replacing one?',
@@ -761,6 +774,7 @@ export const services: Service[] = [
       'ignition-key-assistance-dandenong',
     ],
     relatedAreas: ['dandenong', 'dandenong-south', 'doveton', 'springvale', 'noble-park'],
+    relatedArticles: ['steps-to-take-when-locked-out-of-a-vehicle', 'what-to-do-when-you-lose-your-car-keys'],
     faqs: [
       {
         question: 'Can you open a locked car without damaging it?',
@@ -817,6 +831,7 @@ export const services: Service[] = [
       'emergency-car-locksmith-dandenong',
     ],
     relatedAreas: ['dandenong', 'keysborough', 'hampton-park', 'narre-warren-south'],
+    relatedArticles: ['steps-to-take-when-locked-out-of-a-vehicle', 'what-information-a-locksmith-needs-about-your-vehicle'],
     faqs: [
       {
         question: 'Should I try to remove a broken key myself?',
@@ -872,6 +887,7 @@ export const services: Service[] = [
       'vehicle-lockout-assistance-dandenong',
     ],
     relatedAreas: ['dandenong', 'dandenong-north', 'springvale-south', 'endeavour-hills'],
+    relatedArticles: ['what-information-a-locksmith-needs-about-your-vehicle', 'steps-to-take-when-locked-out-of-a-vehicle'],
     faqs: [
       {
         question: 'Why will my key not turn in the ignition?',
@@ -927,6 +943,7 @@ export const services: Service[] = [
       'spare-motorcycle-keys-dandenong',
     ],
     relatedAreas: ['dandenong', 'noble-park', 'springvale', 'berwick'],
+    relatedArticles: ['motorcycle-key-replacement-information'],
     faqs: [
       {
         question: 'Do you assist with all motorcycle brands?',
@@ -982,6 +999,7 @@ export const services: Service[] = [
       'spare-motorcycle-keys-dandenong',
     ],
     relatedAreas: ['dandenong', 'keysborough', 'hallam', 'rowville'],
+    relatedArticles: ['motorcycle-key-replacement-information', 'what-to-do-when-you-lose-your-car-keys'],
     faqs: [
       {
         question: 'Can a motorcycle key be replaced without the original?',
@@ -1036,6 +1054,7 @@ export const services: Service[] = [
       'spare-motorcycle-keys-dandenong',
     ],
     relatedAreas: ['dandenong', 'springvale', 'narre-warren', 'cranbourne'],
+    relatedArticles: ['motorcycle-key-replacement-information'],
     faqs: [
       {
         question: 'Can you replace keys for all motorbike models?',
@@ -1089,6 +1108,7 @@ export const services: Service[] = [
       'lost-motorcycle-keys-dandenong',
     ],
     relatedAreas: ['dandenong', 'noble-park', 'hampton-park', 'endeavour-hills'],
+    relatedArticles: ['motorcycle-key-replacement-information', 'spare-car-keys-why-having-a-backup-matters'],
     faqs: [
       {
         question: 'Is a working key needed to cut a spare motorcycle key?',

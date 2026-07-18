@@ -41,9 +41,12 @@ export default function AboutPage() {
             About Auto Locksmith Dandenong
           </h1>
           <p className="max-w-3xl text-lg text-slate-600">
-            Auto Locksmith Dandenong is a mobile automotive locksmith business serving Dandenong and
-            surrounding suburbs. Owned by {BUSINESS.ownerName} and established on{' '}
-            {BUSINESS.foundingDateDisplay}, the business assists with vehicle keys, vehicle lockouts, key
+            Auto Locksmith Dandenong is a mobile{' '}
+            <Link href="/services/automotive-locksmith-dandenong/" className="font-semibold text-cyan-600 hover:text-cyan-500">
+              automotive locksmith
+            </Link>{' '}
+            business serving Dandenong and surrounding suburbs. Owned by {BUSINESS.ownerName} and established
+            on {BUSINESS.foundingDateDisplay}, the business assists with vehicle keys, vehicle lockouts, key
             programming and motorcycle key requirements.
           </p>
         </Container>
@@ -55,14 +58,29 @@ export default function AboutPage() {
             <h2 className="text-2xl font-bold text-navy-950">Business History</h2>
             <p>
               The business was established on {BUSINESS.foundingDateDisplay} and has continued to operate
-              as a mobile automotive locksmith service based in Dandenong, Victoria. Rather than requiring
-              customers to bring a vehicle to a workshop, {BUSINESS.name} attends the vehicle location
-              directly, whether that is a home, a workplace or a roadside situation.
+              as a{' '}
+              <Link href="/services/mobile-car-locksmith-dandenong/" className="font-semibold text-cyan-600 hover:text-cyan-500">
+                mobile car locksmith
+              </Link>{' '}
+              service based in Dandenong, Victoria. Rather than requiring customers to bring a vehicle to a
+              workshop, {BUSINESS.name} attends the vehicle location directly, whether that is a home, a
+              workplace or a roadside situation, including{' '}
+              <Link href="/services/emergency-car-locksmith-dandenong/" className="font-semibold text-cyan-600 hover:text-cyan-500">
+                emergency call-outs
+              </Link>
+              .
             </p>
             <p>
               The business is owned and operated by {BUSINESS.ownerName}, with a focus on car and motorcycle
-              key services including replacement keys, lost key assistance, key programming and vehicle
-              lockout assistance across Dandenong and nearby suburbs.
+              key services including{' '}
+              <Link href="/services/car-key-replacement-dandenong/" className="font-semibold text-cyan-600 hover:text-cyan-500">
+                replacement keys
+              </Link>
+              ,{' '}
+              <Link href="/services/lost-car-keys-dandenong/" className="font-semibold text-cyan-600 hover:text-cyan-500">
+                lost key assistance
+              </Link>
+              , key programming and vehicle lockout assistance across Dandenong and nearby suburbs.
             </p>
           </div>
           <div className="flex flex-col gap-4 text-slate-600">

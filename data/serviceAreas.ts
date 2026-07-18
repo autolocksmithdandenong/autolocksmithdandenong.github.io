@@ -5,8 +5,9 @@ const CORE_AREA_SERVICES = [
   'car-key-replacement-dandenong',
   'lost-car-keys-dandenong',
   'mobile-car-locksmith-dandenong',
+  'emergency-car-locksmith-dandenong',
+  'car-key-programming-dandenong',
   'vehicle-lockout-assistance-dandenong',
-  'motorcycle-locksmith-dandenong',
 ];
 
 export const serviceAreas: ServiceArea[] = [
@@ -27,6 +28,7 @@ export const serviceAreas: ServiceArea[] = [
     motorcycleLocksmith:
       'Motorcycle locksmith assistance covers lost keys, replacements and spare keys for riders in and around Dandenong.',
     nearby: ['dandenong-north', 'dandenong-south', 'noble-park', 'springvale'],
+    relatedArticles: ['what-to-do-when-you-lose-your-car-keys', 'preparing-for-a-mobile-automotive-locksmith-visit'],
     relatedServices: CORE_AREA_SERVICES,
     faqs: [
       { question: 'Is Auto Locksmith Dandenong based in Dandenong?', answer: 'Yes, the business is located at 294 Thomas St, Dandenong VIC 3175.' },
@@ -52,6 +54,7 @@ export const serviceAreas: ServiceArea[] = [
     motorcycleLocksmith:
       'Motorcycle locksmith assistance is available to Dandenong North riders needing key replacement or spare keys.',
     nearby: ['dandenong', 'noble-park', 'springvale', 'keysborough'],
+    relatedArticles: ['how-transponder-car-keys-work', 'car-key-replacement-options-explained'],
     relatedServices: CORE_AREA_SERVICES,
     faqs: [
       { question: 'Do you travel to Dandenong North?', answer: 'Yes, mobile automotive locksmith assistance is available throughout Dandenong North.' },
@@ -76,6 +79,7 @@ export const serviceAreas: ServiceArea[] = [
     motorcycleLocksmith:
       'Motorcycle locksmith assistance is available for riders located in Dandenong South.',
     nearby: ['dandenong', 'hallam', 'doveton', 'endeavour-hills'],
+    relatedArticles: ['common-reasons-car-remotes-stop-working', 'steps-to-take-when-locked-out-of-a-vehicle'],
     relatedServices: CORE_AREA_SERVICES,
     faqs: [
       { question: 'Do you service industrial areas of Dandenong South?', answer: 'Yes, mobile assistance is available at workplace and industrial locations in Dandenong South.' },
@@ -100,6 +104,7 @@ export const serviceAreas: ServiceArea[] = [
     motorcycleLocksmith:
       'Motorcycle locksmith assistance is available to riders in Doveton needing key replacement or spare keys.',
     nearby: ['dandenong-south', 'hallam', 'endeavour-hills', 'narre-warren'],
+    relatedArticles: ['steps-to-take-when-locked-out-of-a-vehicle', 'what-to-do-when-you-lose-your-car-keys'],
     relatedServices: CORE_AREA_SERVICES,
     faqs: [
       { question: 'Do you offer mobile locksmith service in Doveton?', answer: 'Yes, mobile automotive locksmith assistance is available throughout Doveton.' },
@@ -124,6 +129,7 @@ export const serviceAreas: ServiceArea[] = [
     motorcycleLocksmith:
       'Motorcycle locksmith assistance is available to Keysborough riders for lost keys and spare key requirements.',
     nearby: ['dandenong', 'noble-park', 'springvale', 'springvale-south'],
+    relatedArticles: ['preparing-for-a-mobile-automotive-locksmith-visit', 'spare-car-keys-why-having-a-backup-matters'],
     relatedServices: CORE_AREA_SERVICES,
     faqs: [
       { question: 'Do you attend shopping centre car parks in Keysborough?', answer: 'Yes, mobile assistance can be arranged at shopping centre car parks in Keysborough.' },
@@ -148,6 +154,7 @@ export const serviceAreas: ServiceArea[] = [
     motorcycleLocksmith:
       'Motorcycle locksmith assistance is available to riders in Noble Park needing key replacement or spare keys.',
     nearby: ['dandenong', 'dandenong-north', 'keysborough', 'springvale'],
+    relatedArticles: ['what-to-do-when-you-lose-your-car-keys', 'what-information-a-locksmith-needs-about-your-vehicle'],
     relatedServices: CORE_AREA_SERVICES,
     faqs: [
       { question: 'Do you attend station car parks in Noble Park?', answer: 'Yes, mobile assistance can be arranged at station car parks and nearby streets in Noble Park.' },
@@ -172,6 +179,7 @@ export const serviceAreas: ServiceArea[] = [
     motorcycleLocksmith:
       'Motorcycle locksmith assistance is available to Rowville riders for lost keys and spare key requirements.',
     nearby: ['endeavour-hills', 'narre-warren', 'hallam', 'dandenong-north'],
+    relatedArticles: ['how-transponder-car-keys-work', 'difference-between-car-keys-remotes-and-key-fobs'],
     relatedServices: CORE_AREA_SERVICES,
     faqs: [
       { question: 'Do you travel to Rowville?', answer: 'Yes, mobile automotive locksmith assistance is available throughout Rowville.' },
@@ -196,6 +204,7 @@ export const serviceAreas: ServiceArea[] = [
     motorcycleLocksmith:
       'Motorcycle locksmith assistance is available to Springvale riders for lost keys and spare key requirements.',
     nearby: ['dandenong', 'noble-park', 'keysborough', 'springvale-south'],
+    relatedArticles: ['car-key-replacement-options-explained', 'spare-car-keys-why-having-a-backup-matters'],
     relatedServices: CORE_AREA_SERVICES,
     faqs: [
       { question: 'Do you attend shopping strip parking in Springvale?', answer: 'Yes, mobile assistance can be arranged at shopping strips and residential streets in Springvale.' },
@@ -220,6 +229,7 @@ export const serviceAreas: ServiceArea[] = [
     motorcycleLocksmith:
       'Motorcycle locksmith assistance is available to Springvale South riders for lost keys and spare key requirements.',
     nearby: ['springvale', 'keysborough', 'dandenong', 'noble-park'],
+    relatedArticles: ['spare-car-keys-why-having-a-backup-matters', 'what-information-a-locksmith-needs-about-your-vehicle'],
     relatedServices: CORE_AREA_SERVICES,
     faqs: [
       { question: 'Do you travel to Springvale South?', answer: 'Yes, mobile automotive locksmith assistance is available throughout Springvale South.' },
@@ -244,6 +254,7 @@ export const serviceAreas: ServiceArea[] = [
     motorcycleLocksmith:
       'Motorcycle locksmith assistance is available to Endeavour Hills riders for lost keys and spare key requirements.',
     nearby: ['doveton', 'hallam', 'narre-warren', 'rowville'],
+    relatedArticles: ['spare-car-keys-why-having-a-backup-matters', 'steps-to-take-when-locked-out-of-a-vehicle'],
     relatedServices: CORE_AREA_SERVICES,
     faqs: [
       { question: 'Do you service Endeavour Hills?', answer: 'Yes, mobile automotive locksmith assistance is available throughout Endeavour Hills.' },
@@ -268,6 +279,7 @@ export const serviceAreas: ServiceArea[] = [
     motorcycleLocksmith:
       'Motorcycle locksmith assistance is available to Hampton Park riders for lost keys and spare key requirements.',
     nearby: ['narre-warren-south', 'cranbourne', 'hallam', 'doveton'],
+    relatedArticles: ['common-reasons-car-remotes-stop-working', 'what-to-do-when-you-lose-your-car-keys'],
     relatedServices: CORE_AREA_SERVICES,
     faqs: [
       { question: 'Do you travel to Hampton Park?', answer: 'Yes, mobile automotive locksmith assistance is available throughout Hampton Park.' },
@@ -292,6 +304,7 @@ export const serviceAreas: ServiceArea[] = [
     motorcycleLocksmith:
       'Motorcycle locksmith assistance is available to Hallam riders for lost keys and spare key requirements.',
     nearby: ['dandenong-south', 'doveton', 'endeavour-hills', 'hampton-park'],
+    relatedArticles: ['what-information-a-locksmith-needs-about-your-vehicle', 'common-reasons-car-remotes-stop-working'],
     relatedServices: CORE_AREA_SERVICES,
     faqs: [
       { question: 'Do you service industrial estates in Hallam?', answer: 'Yes, mobile assistance is available at workplace and industrial locations in Hallam.' },
@@ -316,6 +329,7 @@ export const serviceAreas: ServiceArea[] = [
     motorcycleLocksmith:
       'Motorcycle locksmith assistance is available to Berwick riders for lost keys and spare key requirements.',
     nearby: ['narre-warren', 'narre-warren-south', 'hallam', 'cranbourne-east'],
+    relatedArticles: ['motorcycle-key-replacement-information', 'preparing-for-a-mobile-automotive-locksmith-visit'],
     relatedServices: CORE_AREA_SERVICES,
     faqs: [
       { question: 'Do you travel to Berwick?', answer: 'Yes, mobile automotive locksmith assistance is available throughout Berwick.' },
@@ -340,6 +354,7 @@ export const serviceAreas: ServiceArea[] = [
     motorcycleLocksmith:
       'Motorcycle locksmith assistance is available to Narre Warren riders for lost keys and spare key requirements.',
     nearby: ['berwick', 'endeavour-hills', 'hallam', 'narre-warren-south'],
+    relatedArticles: ['difference-between-car-keys-remotes-and-key-fobs', 'how-transponder-car-keys-work'],
     relatedServices: CORE_AREA_SERVICES,
     faqs: [
       { question: 'Do you attend shopping centre car parks in Narre Warren?', answer: 'Yes, mobile assistance can be arranged at shopping centre car parks in Narre Warren.' },
@@ -364,6 +379,7 @@ export const serviceAreas: ServiceArea[] = [
     motorcycleLocksmith:
       'Motorcycle locksmith assistance is available to Narre Warren South riders for lost keys and spare key requirements.',
     nearby: ['narre-warren', 'berwick', 'hampton-park', 'cranbourne'],
+    relatedArticles: ['steps-to-take-when-locked-out-of-a-vehicle', 'spare-car-keys-why-having-a-backup-matters'],
     relatedServices: CORE_AREA_SERVICES,
     faqs: [
       { question: 'Do you travel to Narre Warren South?', answer: 'Yes, mobile automotive locksmith assistance is available throughout Narre Warren South.' },
@@ -388,6 +404,7 @@ export const serviceAreas: ServiceArea[] = [
     motorcycleLocksmith:
       'Motorcycle locksmith assistance is available to Cranbourne riders for lost keys and spare key requirements.',
     nearby: ['hampton-park', 'narre-warren-south', 'cranbourne-east', 'berwick'],
+    relatedArticles: ['motorcycle-key-replacement-information', 'car-key-replacement-options-explained'],
     relatedServices: CORE_AREA_SERVICES,
     faqs: [
       { question: 'Do you travel to Cranbourne?', answer: 'Yes, mobile automotive locksmith assistance is available throughout Cranbourne.' },
@@ -412,6 +429,7 @@ export const serviceAreas: ServiceArea[] = [
     motorcycleLocksmith:
       'Motorcycle locksmith assistance is available to Cranbourne East riders for lost keys and spare key requirements.',
     nearby: ['cranbourne', 'berwick', 'narre-warren-south', 'hampton-park'],
+    relatedArticles: ['difference-between-car-keys-remotes-and-key-fobs', 'preparing-for-a-mobile-automotive-locksmith-visit'],
     relatedServices: CORE_AREA_SERVICES,
     faqs: [
       { question: 'Do you travel to Cranbourne East?', answer: 'Yes, mobile automotive locksmith assistance is available throughout Cranbourne East.' },

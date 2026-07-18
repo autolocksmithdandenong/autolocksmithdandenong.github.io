@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import { BUSINESS, SITE_URL } from '@/lib/constants';
 import { localBusinessSchema, websiteSchema } from '@/lib/schema';
+import '@/lib/linkGraph';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
@@ -24,6 +25,17 @@ export const metadata: Metadata = {
     'Call Auto Locksmith Dandenong on 0410 380 354 for mobile car key, vehicle lockout, key programming and motorcycle key assistance across Dandenong.',
   applicationName: BUSINESS.name,
   authors: [{ name: BUSINESS.ownerName }],
+  icons: {
+    icon: '/logo/ostan-locksmiths-logo.png',
+    shortcut: '/logo/ostan-locksmiths-logo.png',
+    apple: '/logo/ostan-locksmiths-logo.png',
+  },
+  openGraph: {
+    images: [{ url: '/logo/ostan-locksmiths-logo.png', width: 512, height: 512, alt: `${BUSINESS.name} logo` }],
+  },
+  twitter: {
+    images: ['/logo/ostan-locksmiths-logo.png'],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

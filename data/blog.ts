@@ -11,6 +11,8 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2025-03-10',
     dateModified: '2025-03-10',
     relatedServices: ['lost-car-keys-dandenong', 'car-key-replacement-dandenong', 'vehicle-lockout-assistance-dandenong'],
+    relatedAreas: ['dandenong', 'noble-park'],
+    nextArticle: 'steps-to-take-when-locked-out-of-a-vehicle',
     content: [
       {
         type: 'paragraph',
@@ -52,6 +54,8 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2025-04-02',
     dateModified: '2025-04-02',
     relatedServices: ['car-key-replacement-dandenong', 'transponder-key-programming-dandenong', 'spare-car-keys-dandenong'],
+    relatedAreas: ['springvale', 'keysborough'],
+    nextArticle: 'how-transponder-car-keys-work',
     content: [
       {
         type: 'paragraph',
@@ -89,6 +93,8 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2025-04-28',
     dateModified: '2025-04-28',
     relatedServices: ['transponder-key-programming-dandenong', 'car-key-programming-dandenong', 'car-key-replacement-dandenong'],
+    relatedAreas: ['dandenong-north', 'rowville'],
+    nextArticle: 'difference-between-car-keys-remotes-and-key-fobs',
     content: [
       {
         type: 'paragraph',
@@ -130,6 +136,8 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2025-05-15',
     dateModified: '2025-05-15',
     relatedServices: ['automotive-locksmith-dandenong', 'mobile-car-locksmith-dandenong', 'car-key-replacement-dandenong'],
+    relatedAreas: ['dandenong', 'hallam'],
+    nextArticle: 'preparing-for-a-mobile-automotive-locksmith-visit',
     content: [
       {
         type: 'paragraph',
@@ -171,6 +179,8 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2025-06-09',
     dateModified: '2025-06-09',
     relatedServices: ['spare-car-keys-dandenong', 'duplicate-car-keys-dandenong', 'car-key-programming-dandenong'],
+    relatedAreas: ['springvale-south', 'endeavour-hills'],
+    nextArticle: 'car-key-replacement-options-explained',
     content: [
       {
         type: 'paragraph',
@@ -208,6 +218,8 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2025-07-21',
     dateModified: '2025-07-21',
     relatedServices: ['car-remote-programming-dandenong', 'car-key-fob-assistance-dandenong', 'car-key-programming-dandenong'],
+    relatedAreas: ['dandenong-south', 'hampton-park'],
+    nextArticle: 'difference-between-car-keys-remotes-and-key-fobs',
     content: [
       {
         type: 'paragraph',
@@ -249,6 +261,8 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2025-09-05',
     dateModified: '2025-09-05',
     relatedServices: ['vehicle-lockout-assistance-dandenong', 'emergency-car-locksmith-dandenong', 'mobile-car-locksmith-dandenong'],
+    relatedAreas: ['doveton', 'narre-warren-south'],
+    nextArticle: 'what-to-do-when-you-lose-your-car-keys',
     content: [
       {
         type: 'paragraph',
@@ -286,6 +300,8 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2025-10-18',
     dateModified: '2025-10-18',
     relatedServices: ['motorbike-key-replacement-dandenong', 'lost-motorcycle-keys-dandenong', 'spare-motorcycle-keys-dandenong'],
+    relatedAreas: ['berwick', 'cranbourne'],
+    nextArticle: 'what-information-a-locksmith-needs-about-your-vehicle',
     content: [
       {
         type: 'paragraph',
@@ -322,6 +338,8 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2025-12-02',
     dateModified: '2025-12-02',
     relatedServices: ['car-key-fob-assistance-dandenong', 'car-remote-programming-dandenong', 'car-key-programming-dandenong'],
+    relatedAreas: ['narre-warren', 'cranbourne-east'],
+    nextArticle: 'common-reasons-car-remotes-stop-working',
     content: [
       {
         type: 'paragraph',
@@ -359,6 +377,8 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-02-11',
     dateModified: '2026-02-11',
     relatedServices: ['mobile-car-locksmith-dandenong', 'automotive-locksmith-dandenong', 'car-key-replacement-dandenong'],
+    relatedAreas: ['keysborough', 'rowville'],
+    nextArticle: 'what-information-a-locksmith-needs-about-your-vehicle',
     content: [
       {
         type: 'paragraph',

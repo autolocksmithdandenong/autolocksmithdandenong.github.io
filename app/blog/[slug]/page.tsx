@@ -11,6 +11,7 @@ import { CTABanner } from '@/components/ui/CTABanner';
 import { BlogContent } from '@/components/sections/BlogContent';
 import { blogPosts, getBlogPostBySlug } from '@/data/blog';
 import { getServiceBySlug } from '@/data/services';
+import { getServiceAreaBySlug } from '@/data/serviceAreas';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -48,6 +49,10 @@ export default async function BlogPostPage({ params }: Props) {
   const relatedServices = post.relatedServices
     .map((serviceSlug) => getServiceBySlug(serviceSlug))
     .filter((s): s is NonNullable<typeof s> => Boolean(s));
+  const relatedAreas = post.relatedAreas
+    .map((areaSlug) => getServiceAreaBySlug(areaSlug))
+    .filter((a): a is NonNullable<typeof a> => Boolean(a));
+  const nextPost = post.nextArticle ? getBlogPostBySlug(post.nextArticle) : undefined;
 
   const breadcrumbItems = [
     { name: 'Home', path: '/' },
@@ -107,6 +112,25 @@ export default async function BlogPostPage({ params }: Props) {
                   </li>
                 ))}
               </ul>
+
+              {relatedAreas.length > 0 ? (
+                <>
+                  <h2 className="mt-5 text-lg font-bold text-navy-950">Relevant Service Areas</h2>
+                  <ul className="mt-3 flex flex-wrap gap-3">
+                    {relatedAreas.map((area) => (
+                      <li key={area.slug}>
+                        <Link
+                          href={`/service-areas/${area.slug}/`}
+                          className="inline-flex items-center rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-cyan-700 hover:border-cyan-400"
+                        >
+                          {area.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              ) : null}
+
               <p className="mt-4 text-sm text-slate-600">
                 Return to the{' '}
                 <Link href="/" className="font-semibold text-cyan-600 hover:text-cyan-500">
@@ -119,6 +143,19 @@ export default async function BlogPostPage({ params }: Props) {
                 .
               </p>
             </div>
+
+            {nextPost ? (
+              <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+                <p className="text-xs font-semibold uppercase tracking-wide text-cyan-600">Read Next</p>
+                <Link
+                  href={`/blog/${nextPost.slug}/`}
+                  className="mt-1 block text-lg font-bold text-navy-950 hover:text-cyan-600"
+                >
+                  {nextPost.title}
+                </Link>
+                <p className="mt-1 text-sm text-slate-600">{nextPost.excerpt}</p>
+              </div>
+            ) : null}
           </div>
         </Container>
       </article>

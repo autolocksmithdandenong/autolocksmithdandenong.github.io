@@ -13,4 +13,6 @@ export type BlogPost = {
   dateModified: string;
   content: ContentBlock[];
   relatedServices: string[];
+  relatedAreas: string[];
+  nextArticle?: string;
 };

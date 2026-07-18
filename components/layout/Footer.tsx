@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { BUSINESS, SOCIAL_LINKS, NAP_DISCLAIMER } from '@/lib/constants';
 import { footerServiceLinks, footerAreaLinks, legalNav } from '@/data/navigation';
 import { Icon } from '@/components/ui/Icon';
+import { Logo } from '@/components/ui/Logo';
 import { SocialIcon, type SocialName } from '@/components/ui/SocialIcons';
 import { Container } from '@/components/ui/Container';
 
@@ -12,8 +13,9 @@ export function Footer() {
     <footer className="border-t border-slate-200 bg-navy-950 text-slate-300">
       <Container className="grid grid-cols-1 gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col gap-3">
-          <Link href="/" className="text-lg font-bold text-white">
-            Auto Locksmith Dandenong
+          <Link href="/" className="flex items-center gap-3">
+            <Logo size="md" className="h-12 w-12" />
+            <span className="text-lg font-bold text-white">Auto Locksmith Dandenong</span>
           </Link>
           <p className="text-sm text-slate-400">
             Mobile automotive locksmith assistance for cars and motorcycles across Dandenong and surrounding

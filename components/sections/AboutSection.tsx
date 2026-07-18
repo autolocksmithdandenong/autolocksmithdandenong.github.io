@@ -15,9 +15,23 @@ export function AboutSection() {
             {BUSINESS.foundingDateDisplay}.
           </p>
           <p>
-            The business assists drivers and riders with car keys, motorcycle keys, key programming and
-            vehicle lockouts, attending the vehicle location rather than requiring vehicles to be brought to
-            a premises.
+            The business assists drivers and riders with{' '}
+            <Link href="/services/car-key-replacement-dandenong/" className="font-semibold text-cyan-600 hover:text-cyan-500">
+              car key replacement
+            </Link>
+            ,{' '}
+            <Link href="/services/motorcycle-locksmith-dandenong/" className="font-semibold text-cyan-600 hover:text-cyan-500">
+              motorcycle key assistance
+            </Link>
+            ,{' '}
+            <Link href="/services/car-key-programming-dandenong/" className="font-semibold text-cyan-600 hover:text-cyan-500">
+              car key programming
+            </Link>{' '}
+            and{' '}
+            <Link href="/services/vehicle-lockout-assistance-dandenong/" className="font-semibold text-cyan-600 hover:text-cyan-500">
+              vehicle lockout assistance
+            </Link>
+            , attending the vehicle location rather than requiring vehicles to be brought to a premises.
           </p>
           <Link href="/about-auto-locksmith-dandenong/" className="font-semibold text-cyan-600 hover:text-cyan-500">
             Read more about Auto Locksmith Dandenong &rarr;

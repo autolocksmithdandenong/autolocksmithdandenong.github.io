@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { buildMetadata } from '@/lib/metadata';
 import { BUSINESS, SOCIAL_LINKS } from '@/lib/constants';
 import { contactPageSchema, breadcrumbSchema } from '@/lib/schema';
@@ -9,6 +10,20 @@ import { Icon } from '@/components/ui/Icon';
 import { Button } from '@/components/ui/Button';
 import { ContactForm } from '@/components/forms/ContactForm';
 import { SocialIcon, type SocialName } from '@/components/ui/SocialIcons';
+
+const quickServiceLinks = [
+  { label: 'Automotive Locksmith', href: '/services/automotive-locksmith-dandenong/' },
+  { label: 'Emergency Car Locksmith', href: '/services/emergency-car-locksmith-dandenong/' },
+  { label: 'Replacement Car Keys', href: '/services/car-key-replacement-dandenong/' },
+  { label: 'Lost Car Keys', href: '/services/lost-car-keys-dandenong/' },
+  { label: 'Mobile Car Locksmith', href: '/services/mobile-car-locksmith-dandenong/' },
+];
+
+const quickAreaLinks = [
+  { label: 'Dandenong', href: '/service-areas/dandenong/' },
+  { label: 'Noble Park', href: '/service-areas/noble-park/' },
+  { label: 'Springvale', href: '/service-areas/springvale/' },
+];
 
 const title = 'Contact Auto Locksmith Dandenong | Call 0410 380 354';
 const description =
@@ -127,6 +142,41 @@ export default function ContactPage() {
               <ContactForm />
             </div>
           </div>
+        </Container>
+      </section>
+
+      <section className="border-t border-slate-200 py-10">
+        <Container className="flex flex-col gap-3 text-sm text-slate-500">
+          <p>
+            Looking for a specific service?{' '}
+            {quickServiceLinks.map((link, index) => (
+              <span key={link.href}>
+                <Link href={link.href} className="font-medium text-cyan-600 hover:text-cyan-500">
+                  {link.label}
+                </Link>
+                {index < quickServiceLinks.length - 1 ? ', ' : '. '}
+              </span>
+            ))}
+            <Link href="/services/" className="font-medium text-cyan-600 hover:text-cyan-500">
+              View all services &rarr;
+            </Link>
+          </p>
+          <p>
+            Also servicing{' '}
+            {quickAreaLinks.map((link, index) => (
+              <span key={link.href}>
+                <Link href={link.href} className="font-medium text-cyan-600 hover:text-cyan-500">
+                  {link.label}
+                </Link>
+                {index < quickAreaLinks.length - 1 ? ', ' : ' '}
+              </span>
+            ))}
+            and{' '}
+            <Link href="/service-areas/" className="font-medium text-cyan-600 hover:text-cyan-500">
+              other nearby suburbs
+            </Link>
+            .
+          </p>
         </Container>
       </section>
     </>

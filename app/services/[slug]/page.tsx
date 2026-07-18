@@ -13,6 +13,7 @@ import { FAQSection } from '@/components/sections/FAQSection';
 import { CTABanner } from '@/components/ui/CTABanner';
 import { getServiceBySlug, getRelatedServices, services } from '@/data/services';
 import { getServiceAreaBySlug } from '@/data/serviceAreas';
+import { getBlogPostBySlug } from '@/data/blog';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -47,6 +48,9 @@ export default async function ServicePage({ params }: Props) {
   const relatedAreas = service.relatedAreas
     .map((areaSlug) => getServiceAreaBySlug(areaSlug))
     .filter((a): a is NonNullable<typeof a> => Boolean(a));
+  const relatedArticles = service.relatedArticles
+    .map((articleSlug) => getBlogPostBySlug(articleSlug))
+    .filter((p): p is NonNullable<typeof p> => Boolean(p));
 
   const breadcrumbItems = [
     { name: 'Home', path: '/' },
@@ -185,6 +189,24 @@ export default async function ServicePage({ params }: Props) {
                 View All Service Areas &rarr;
               </Link>
             </div>
+
+            {relatedArticles.length > 0 ? (
+              <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+                <h2 className="text-lg font-bold text-navy-950">Related Articles</h2>
+                <ul className="mt-3 flex flex-col gap-2">
+                  {relatedArticles.map((article) => (
+                    <li key={article.slug}>
+                      <Link
+                        href={`/blog/${article.slug}/`}
+                        className="text-sm font-medium text-cyan-600 hover:text-cyan-500"
+                      >
+                        {article.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
           </aside>
         </Container>
       </section>
