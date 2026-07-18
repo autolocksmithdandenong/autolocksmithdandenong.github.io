@@ -27,20 +27,11 @@ export function buildMetadata({ title, description, path, noIndex }: BuildMetada
       siteName: BUSINESS.name,
       locale: 'en_AU',
       type: 'website',
-      images: [
-        {
-          url: '/logo/ostan-locksmiths-logo.png',
-          width: 512,
-          height: 512,
-          alt: `${BUSINESS.name} logo`,
-        },
-      ],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: ['/logo/ostan-locksmiths-logo.png'],
     },
   };
 }
