@@ -49,6 +49,7 @@ jobs:
         run: |
           test -f out/index.html
           test -f out/404.html
+          test -d out/_next
           touch out/.nojekyll
           echo "Static export verified successfully."
 
