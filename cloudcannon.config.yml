@@ -1,0 +1,11 @@
+paths:
+  static: ''
+  uploads: uploads
+timezone: Asia/Calcutta
+markdown:
+  engine: commonmark
+  options: {}
+collections_config:
+  app:
+    path: app
+    icon: api
